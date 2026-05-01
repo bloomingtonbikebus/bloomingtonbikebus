@@ -6,8 +6,7 @@ const path = require('path');
 
 const privateKey = fs.readFileSync('key.pem', 'utf8');
 const certificate = fs.readFileSync('cert.pem', 'utf8');
-const passphrase = 'hi';
-const credentials = {key: privateKey, passphrase, cert: certificate};
+const credentials = {key: privateKey, cert: certificate};
 
 const httpsServer = https.createServer(credentials, app);
 
