@@ -23,6 +23,6 @@ app.get('/', (req, res) => {
 	res.sendFile(path.join(__dirname, 'src/index.html'));
 });
 
-app.listen(443, () => {
+httpsServer.listen(443, () => {
 	console.log('ts is running');
 });
