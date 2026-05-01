@@ -1,0 +1,13 @@
+const http = require('express');
+const fs = require('fs');
+
+const app = express();
+
+app.get('/', (req, res) => {
+	res.sendFile(path.join(__dirname, 'src/index.html'));
+});
+
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+	console.log('ts is running');
+});
