@@ -27,6 +27,11 @@ app.get('/logo.png', (req, res) => {
 	res.sendFile(path.join(__dirname, 'src/logo.png'));
 });
 
+app.get('/favicon.ico', (req, res) => {
+	res.sendFile(path.join(__dirname, 'src/favicon.ico'));
+});
+
+
 httpsServer.listen(443, () => {
 	console.log('ts is running');
 });
