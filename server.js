@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
 	res.sendFile(path.join(__dirname, 'src/index.html'));
 });
 
-const PORT = 8080;
+const PORT = 443;
 app.listen(PORT, () => {
 	console.log('ts is running');
 });
